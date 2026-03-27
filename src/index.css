@@ -109,17 +109,25 @@ code {
   background: var(--code-bg);
 }
 
-/* 🔹 Glowing Edge Animation */
-@keyframes edge-pulse {
-  0% { stroke-dashoffset: 20; opacity: 0.8; }
-  50% { opacity: 1; }
-  100% { stroke-dashoffset: 0; opacity: 0.8; }
+/* 🔹 Rational Data Flow Animation */
+@keyframes edge-flow {
+  from {
+    stroke-dashoffset: 30; /* Start further in the pattern */
+  }
+  to {
+    stroke-dashoffset: 0;   /* Slide to the beginning */
+  }
 }
 
 .react-flow__edge-path.animated {
   stroke-width: 3;
   stroke-dasharray: 10, 5;
-  animation: edge-pulse 1.5s infinite linear;
+  animation: edge-flow 0.8s infinite linear; /* Faster, smoother flow */
+}
+
+.react-flow__connection-path {
+  stroke-dasharray: 10, 5;
+  animation: edge-flow 0.8s infinite linear;
 }
 
 /* Context Menu Hover Effects */
