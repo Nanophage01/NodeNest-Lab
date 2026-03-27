@@ -2,6 +2,14 @@
 
 A specialized workflow editor implementation using **React Flow** and **Vite**. This project focuses on custom node geometry, glassmorphic UI components, and directional data-flow visualization.
 
+## Preview
+
+<p align="center">
+  <img src="src/assets/main-interface.png" width="100%" alt="NodeFlow Main Interface" />
+  <br />
+  <em>The glassmorphic dashboard featuring custom node shapes and animated data streams.</em>
+</p>
+
 ## Technical Highlights
 
 - **Custom Geometry**: Implementation of non-rectangular node shapes (Cylindrical Databases, Diamond Logic Gates) using CSS `clip-path` and transformations.
