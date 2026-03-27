@@ -1,4 +1,4 @@
-# NodeFlow.AI
+# NodeNest-Lab
 
 A specialized workflow editor implementation using **React Flow** and **Vite**. This project focuses on custom node geometry, glassmorphic UI components, and directional data-flow visualization.
 
