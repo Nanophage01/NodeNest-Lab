@@ -11,8 +11,8 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
@@ -115,19 +115,19 @@ code {
     stroke-dashoffset: 30; /* Start further in the pattern */
   }
   to {
-    stroke-dashoffset: 0;   /* Slide to the beginning */
+    stroke-dashoffset: 0; /* Slide to the beginning */
   }
 }
 
 .react-flow__edge-path.animated {
-  stroke-width: 3;
-  stroke-dasharray: 10, 5;
-  animation: edge-flow 0.8s infinite linear; /* Faster, smoother flow */
+  stroke-width: 2.5;
+  stroke-dasharray: none;
+  animation: none;
 }
 
 .react-flow__connection-path {
-  stroke-dasharray: 10, 5;
-  animation: edge-flow 0.8s infinite linear;
+  stroke-dasharray: none;
+  animation: none;
 }
 
 /* Context Menu Hover Effects */
@@ -137,19 +137,17 @@ code {
   transform: translateX(4px);
 }
 
-/* 🔹 Sleek Edge Badge Styles */
+/* Edge label badge: more traditional */
 .edge-badge {
-  padding: 4px 10px;
-  border-radius: 20px;
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(8px);
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-size: 9px;
+  color: #e5e7eb;
+  font-size: 11px;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   pointer-events: all;
   white-space: nowrap;
 }
